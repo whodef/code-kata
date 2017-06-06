@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update CSS Variables with JS</title>
+    <style>
+
+        :root {
+            --base: #ffd42a;
+            --spacing: 10px;
+            --blur: 10px;
+        }
+
+        img {
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+
+        .hl {
+            color: var(--base);
+        }
+
+        body {
+            text-align: center;
+        }
+
+        body {
+            background: #1c5a83;
+            color: #fffdf5;
+            font-family: "Helvetica Neue", sans-serifans serif;
+            font-weight: 100;
+            font-size: 50px;
+        }
+
+        .controls {
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Update CSS Variables with <span class="hl">JavaScript</span></h2>
+<div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input type="color" id="base" name="base" value="#ffc600">
+</div>
+<img src="http://musiccitiessummit.com/wp-content/uploads/chicago-1.jpg" width="1000" height="500">
+<script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate() {
+        //console.log(this.dataset);
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => addEventListener('change', handleUpdate));
+    inputs.forEach(input => addEventListener('mousemove', handleUpdate));
+</script>
+</body>
+</html>
