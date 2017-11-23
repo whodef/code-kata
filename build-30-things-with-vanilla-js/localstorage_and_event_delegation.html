@@ -16,7 +16,11 @@
             text-align: center;
             font-family: Futura,"Trebuchet MS",Arial,sans-serif
         }
-        *, *:before, *:after {box-sizing: inherit; }
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
 
         svg {
             fill:white;
@@ -57,7 +61,6 @@
         .plates label {
             flex:1;
             cursor: pointer;
-
         }
 
         .plates input {
@@ -105,14 +108,14 @@
         <li>Loading laps...</li>
     </ul>
     <form class="add-items">
-        <input type="text" name="item" placeholder="Item Name" recured>
+        <input type="text" name="item" placeholder="Item Name" required>
         <input type="submit" value="+ Add Item">
     </form>
 </div>
 
 <script>
-    const addItems= document.querySelector('.add-items');
-    const itemsList= document.querySelector('.plates');
+    const addItems = document.querySelector('.add-items');
+    const itemsList = document.querySelector('.plates');
 
     // check localStorage for items if nothing found fallback to empty array
     const items = JSON.parse(localStorage.getItem('items')) || [];
