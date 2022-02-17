@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://media.istockphoto.com/vectors/two-kids-sparing-on-karate-makes-a-high-kick-vector-id1178319540?k=20&m=1178319540&s=612x612&w=0&h=1Wmcdl0Z7stzaYeHTTS7SLghfNiZRMtP3JhVY1gPLyQ="></p>
-
 ## [What are Code Katas and Why Should we Care?](https://medium.com/hackernoon/what-are-code-katas-and-why-should-we-care-2e3f1b7e111c)
 <q>While we, as software system developers, certainly know that our day to day work can bring a lot of satisfaction and improvement to our profession, there prove to be other ways that we can also try out to flex our coding “muscle”. “Kata” is a term borrowed from the world of martial arts. According to Wikipedia, a kata “is a detailed choreographed pattern of movements made to be practiced alone, but are also practiced within groups and in unison when training.” That sounds a bit different that what you might’ve expected. But if you think about it, our coding craft is not that much different. We practice a pattern of strokes, sometimes alone, but also in groups, you might know as teams, or pairs, that sometimes translate into pair programming sessions.</q>
+
+<p align="center"> <img src="https://media.istockphoto.com/vectors/two-kids-sparing-on-karate-makes-a-high-kick-vector-id1178319540?k=20&m=1178319540&s=612x612&w=0&h=1Wmcdl0Z7stzaYeHTTS7SLghfNiZRMtP3JhVY1gPLyQ="></p>
