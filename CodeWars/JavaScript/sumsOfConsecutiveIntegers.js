@@ -20,7 +20,6 @@ Assume there will always be a sum of x consecutive integers that totals to y and
  */
  
 function position(x, y, n) {
-  // TODO: return consecutive integer at requested position
   let minInt = Math.floor(y/x),
       num = Math.ceil(x/2)-1;
   

@@ -1,9 +1,9 @@
 process.stdin.resume();
 process.stdin.setEncoding('ascii');
 
-var input_stdin = "";
-var input_stdin_array = "";
-var input_currentline = 0;
+let input_stdin = "";
+let input_stdin_array = "";
+let input_currentline = 0;
 
 process.stdin.on('data', function (data) {
     input_stdin += data;
@@ -34,12 +34,12 @@ function Person(initialAge){
 
 function main() {
 
-var T=parseInt(readLine());
-for(i=0;i<T;i++){
-    var age=parseInt(readLine());
-    var p=new Person(age);
+let T=parseInt(readLine());
+for(let i = 0; i < T; i++){
+    const age = parseInt(readLine());
+    const p = new Person(age);
     p.amIOld();
-    for(j=0;j<3;j++){
+    for(let j = 0; j < 3; j++){
         p.yearPasses();
         
     }

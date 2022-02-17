@@ -23,14 +23,13 @@ function processData(input) {
 
     if (actDate <= expDate) {
         fine = 0;
-    } else if (a[1] == b[1]  &&  a[2] == b[2]) {
+    } else if (a[1] === b[1]  &&  a[2] === b[2]) {
         fine = 15*(a[0] - b[0]);
-    } else if (a[2] == b[2]) {
+    } else if (a[2] === b[2]) {
         fine = 500*(a[1] - b[1]);
     } else {
         fine = 10000;
     }
-
     console.log(fine);
 }
 
